@@ -1,4 +1,5 @@
 /// The version number of protocol compiler.
+#[derive(serde::Serialize, serde::Deserialize)]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Version {
@@ -14,6 +15,7 @@ pub struct Version {
     pub suffix: ::core::option::Option<::prost::alloc::string::String>,
 }
 /// An encoded CodeGeneratorRequest is written to the plugin's stdin.
+#[derive(serde::Serialize, serde::Deserialize)]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct CodeGeneratorRequest {
@@ -46,6 +48,7 @@ pub struct CodeGeneratorRequest {
     pub compiler_version: ::core::option::Option<Version>,
 }
 /// The plugin writes an encoded CodeGeneratorResponse to stdout.
+#[derive(serde::Serialize, serde::Deserialize)]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct CodeGeneratorResponse {
@@ -69,7 +72,8 @@ pub struct CodeGeneratorResponse {
 /// Nested message and enum types in `CodeGeneratorResponse`.
 pub mod code_generator_response {
     /// Represents a single generated file.
-    #[allow(clippy::derive_partial_eq_without_eq)]
+    #[derive(serde::Serialize, serde::Deserialize)]
+#[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct File {
         /// The file name, relative to the output directory.  The name must not
