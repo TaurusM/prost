@@ -10,14 +10,14 @@ edition = "2018"
 
 [dependencies]
 bytes = { version = "1", default-features = false }
-sg-prost = { path = ".." }
-sg-prost-types = { path = "../sg-prost-types" }
+prost = { path = ".." }
+prost-types = { path = "../prost-types" }
 
 [build-dependencies]
 anyhow = "1.0.1"
 curl = "0.4.13"
 flate2 = "1.0.3"
-sg-prost-build = { path = "../sg-prost-build" }
+prost-build = { path = "../prost-build" }
 tar = "0.4.15"
 tempfile = "3"
 
