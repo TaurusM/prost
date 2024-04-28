@@ -23,17 +23,17 @@ std = []
 anyhow = "1.0.1"
 bytes = "1"
 cfg-if = "1"
-prost = { path = ".." }
-prost-types = { path = "../prost-types" }
+sg-prost = { path = ".." }
+sg-prost-types = { path = "../sg-prost-types" }
 protobuf = { path = "../protobuf" }
 
 [dev-dependencies]
 diff = "0.1"
-prost-build = { path = "../prost-build" }
+sg-prost-build = { path = "../sg-prost-build" }
 tempfile = "3"
 
 [build-dependencies]
 cfg-if = "1"
 env_logger = { version = "0.8", default-features = false }
-prost-build = { path = "../prost-build" }
+sg-prost-build = { path = "../sg-prost-build" }
 protobuf = { path = "../protobuf" }

@@ -48,7 +48,7 @@ std = []
 
 [dependencies]
 bytes = { version = "1", default-features = false }
-prost-derive = { version = "0.11.0", path = "sg-prost-derive", optional = true }
+sg-prost-derive = { version = "0.11.0", path = "sg-prost-derive", optional = true }
 
 [dev-dependencies]
 criterion = "0.3"
