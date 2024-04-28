@@ -13,5 +13,5 @@ bytes = "1"
 env_logger = { version = "0.8", default-features = false }
 log = "0.4"
 sg-prost = { path = ".." }
-sg-protobuf = { path = "../sg-protobuf" }
+protobuf = { path = "../protobuf" }
 tests = { path = "../tests" }
