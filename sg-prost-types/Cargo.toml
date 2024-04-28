@@ -19,7 +19,7 @@ doctest = false
 
 [features]
 default = ["std"]
-std = ["prost/std"]
+std = ["sg-prost/std"]
 
 [dependencies]
 bytes = { version = "1", default-features = false }
