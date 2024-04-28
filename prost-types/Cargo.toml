@@ -23,7 +23,7 @@ std = ["prost/std"]
 
 [dependencies]
 bytes = { version = "1", default-features = false }
-sg-prost = { version = "0.11", path = "..", default-features = false, features = ["prost-derive"] }
+sg-prost = { version = "0.11", path = "..", default-features = false, features = ["sg-prost-derive"] }
 serde = { version = "1.0.145", features = ["derive"] }
 
 [dev-dependencies]

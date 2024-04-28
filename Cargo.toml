@@ -42,7 +42,7 @@ exclude = [
 bench = false
 
 [features]
-default = ["prost-derive", "std"]
+default = ["sg-prost-derive", "std"]
 no-recursion-limit = []
 std = []
 
